@@ -6,4 +6,7 @@ return {
     {
         "lewpoly/sherbet.nvim",
     },
+    {
+        "jacoborus/tender.vim",
+    },
 }
