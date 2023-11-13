@@ -11,8 +11,9 @@ require("lazy").setup({
         -- add LazyVim and import its plugins
         { "LazyVim/LazyVim", import = "lazyvim.plugins" },
         -- import any extras modules here
-        { import = "lazyvim.plugins.extras.lang.typescript" },
-        { import = "lazyvim.plugins.extras.lang.json" },
+        { import = "lazyvim.plugins.extras.formatting.prettier" },
+        -- { import = "lazyvim.plugins.extras.lang.typescript" },
+        -- { import = "lazyvim.plugins.extras.lang.json" },
         -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
         -- import/override with your plugins
         { import = "plugins" },
@@ -51,13 +52,13 @@ require("lualine").setup({
     },
 })
 
-require("bluloco").setup({
-    style = "auto", -- "auto" | "dark" | "light"
-    transparent = false,
-    italics = false,
-    terminal = vim.fn.has("gui_running") == 1, -- bluoco colors are enabled in gui terminals per default.
-    guicursor = true,
-})
+-- require("bluloco").setup({
+--     style = "auto", -- "auto" | "dark" | "light"
+--     transparent = true,
+--     italics = false,
+--     terminal = vim.fn.has("gui_running") == 1, -- bluoco colors are enabled in gui terminals per default.
+--     guicursor = true,
+-- })
 
 vim.opt.termguicolors = true
-vim.cmd("colorscheme bluloco-dark")
+vim.cmd("colorscheme sherbet")
