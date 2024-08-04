@@ -1,17 +1,19 @@
 return {
-    "goolord/alpha-nvim",
-    opts = function(_, opts)
-        local logo = [[
-         ██████╗     ██╗ ██████╗ 
-        ██╔════╝     ██║ ██ ╔═██╗
-        ██║          ██║ ██████╔╝
-        ██║     ██   ██║ ██╔═══╝ 
-        ╚██████╗╚█████╔╝ ██║     
-         ╚═════╝ ╚════╝  ╚═╝     
-                                
-
-              @cjpanilag
+  "goolord/alpha-nvim",
+  event = "VimEnter",
+  enabled = true,
+  init = false,
+  opts = function()
+    local dashboard = require("alpha.themes.dashboard")
+    local logo = [[
+       ██████╗     ██╗ ██████╗
+      ██╔════╝     ██║ ██ ╔═██╗
+      ██║          ██║ ██████╔╝
+      ██║     ██   ██║ ██╔═══╝
+      ╚██████╗╚█████╔╝ ██║
+       ╚═════╝ ╚════╝  ╚═╝
     ]]
-        opts.section.header.val = vim.split(logo, "\n", { trimempty = true })
-    end,
+
+    dashboard.section.header.val = vim.split(logo, "\n")
+  end,
 }
