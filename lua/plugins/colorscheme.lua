@@ -3,8 +3,32 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "sherbet",
+      colorscheme = "nordic",
+      -- colorscheme = "kanagawa-wave",
+      -- colorscheme = "fleet",
     },
+  },
+  {
+    "scottmckendry/cyberdream.nvim",
+  },
+  {
+    "AlexvZyl/nordic.nvim",
+  },
+  {
+    "nyoom-engineering/oxocarbon.nvim",
+  },
+  {
+    "wuelnerdotexe/vim-enfocado",
+    name = "enfocado",
+  },
+  {
+    "rebelot/kanagawa.nvim",
+  },
+  {
+    "oxfist/night-owl.nvim",
+  },
+  {
+    "felipeagc/fleet-theme-nvim",
   },
   {
     "uloco/bluloco.nvim",

@@ -48,3 +48,13 @@ require("lazy").setup({
 })
 
 vim.opt.termguicolors = true
+
+-- Load your custom highlights after LazyVim setup
+vim.api.nvim_create_autocmd("ColorScheme", {
+  callback = function()
+    require("custom.highlights").setup()
+  end,
+})
+
+-- Apply the highlights immediately after this configuration loads
+require("custom.highlights").setup()
